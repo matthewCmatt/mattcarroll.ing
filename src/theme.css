@@ -16,8 +16,8 @@
     --color-text: var(--color-white-soft);
     --color-button-bg: var(--color-black);
     --color-button-border: var(--color-yellow);
-    --color-a: var(--color-yellow);
-    --color-a-hover: var(--color-flame);
+    --color-a: var(--color-flame);
+    --color-a-hover: var(--color-yellow);
 }
 
 @media (prefers-color-scheme: light) {
