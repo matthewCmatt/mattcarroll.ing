@@ -13,3 +13,9 @@
     - <a href={linkedin}>LinkedIn</a>
   </p>
 </main>
+
+<style>
+  p {
+    padding-bottom: 1em;
+  }
+</style>
