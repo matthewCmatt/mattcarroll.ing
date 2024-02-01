@@ -8,13 +8,13 @@
 
 <main>
   <h1>Matthew Carroll</h1>
-  <p>Computer Science Undergraduate</p>
+  <p>Computer Science Undergraduate at the University of Oklahoma</p>
   <AnchorButton href={github} label="GitHub" />
   <AnchorButton href={linkedin} label="LinkedIn" />
 </main>
 
 <style>
   p {
-    padding-bottom: 1em;
+    padding-bottom: 2em;
   }
 </style>
