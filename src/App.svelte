@@ -1,4 +1,6 @@
 <script>
+  import AnchorButton from "./lib/AnchorButton.svelte";
+
   let github = "https://github.com/matthewCmatt";
   let linkedin = "https://www.linkedin.com/in/matthew-carroll-ab9129182/";
   let email = "matthewCmatt@gmail.com";
@@ -7,11 +9,8 @@
 <main>
   <h1>Matthew Carroll</h1>
   <p>Computer Science Undergraduate</p>
-  <p>
-    <a href="mailto:{email}">{email}</a>
-    - <a href={github}>GitHub</a>
-    - <a href={linkedin}>LinkedIn</a>
-  </p>
+  <AnchorButton href={github} label="GitHub" />
+  <AnchorButton href={linkedin} label="LinkedIn" />
 </main>
 
 <style>
