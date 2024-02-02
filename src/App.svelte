@@ -3,7 +3,6 @@
 
   let github = "https://github.com/matthewCmatt";
   let linkedin = "https://www.linkedin.com/in/matthew-carroll-ab9129182/";
-  let email = "matthewCmatt@gmail.com";
 </script>
 
 <main>
