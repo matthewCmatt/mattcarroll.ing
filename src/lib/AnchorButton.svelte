@@ -10,7 +10,7 @@
 <style>
   a {
     border-radius: 8px;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     padding: 0.6em 1.2em;
     margin: 0 0.4em;
     font-size: 1em;
