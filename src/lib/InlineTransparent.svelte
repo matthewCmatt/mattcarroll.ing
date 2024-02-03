@@ -9,8 +9,8 @@
             var(--color-a),
             var(--color-a-hover)
         );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: rgba(0, 0, 0, 0);
         user-select: none;
     }
 
