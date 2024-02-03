@@ -8,7 +8,7 @@
 
 <main>
   <h1>
-    Matthew Carroll<InlineTransparent>.ing</InlineTransparent>
+    Matt Carroll<InlineTransparent>.ing</InlineTransparent>
   </h1>
   <p>Computer Science Undergraduate at the University of Oklahoma</p>
   <AnchorButton href={github} label="GitHub" />
