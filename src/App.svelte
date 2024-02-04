@@ -1,22 +1,14 @@
 <script>
-  import AnchorButton from "./lib/AnchorButton.svelte";
-  import InlineTransparent from "./lib/InlineTransparent.svelte";
+  import { Router, Link, Route } from "svelte-routing";
+  import Home from "./routes/Home.svelte";
+  import Projects from "./routes/Projects.svelte";
 
-  let github = "https://github.com/matthewCmatt";
-  let linkedin = "https://www.linkedin.com/in/matthew-carroll-ab9129182/";
+  export let url = "";
 </script>
 
-<main>
-  <h1>
-    Matt Carroll<InlineTransparent>.ing</InlineTransparent>
-  </h1>
-  <p>Computer Science Undergraduate at the University of Oklahoma</p>
-  <AnchorButton href={github} label="GitHub" />
-  <AnchorButton href={linkedin} label="LinkedIn" />
-</main>
-
-<style>
-  p {
-    padding-bottom: 2em;
-  }
-</style>
+<Router {url}>
+  <div>
+    <Route path="/"><Home /></Route>
+    <Route path="/projects"><Projects /></Route>
+  </div>
+</Router>
