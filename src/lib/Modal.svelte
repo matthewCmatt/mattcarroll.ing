@@ -36,7 +36,7 @@
 
         width: 800px;
 
-        background-color: var(--color-button-bg);
+        background-color: var(--color-background);
 
         border-radius: var(--border-radius);
         border-style: solid;
@@ -50,14 +50,15 @@
     dialog::backdrop {
         background-color: rgba(0, 0, 0, 0.75);
     }
-    .content {
-        display: block;
-    }
 
     .close {
         position: absolute;
         right: 1rem;
         width: 3rem;
         height: 3rem;
+    }
+
+    .content {
+        display: block;
     }
 </style>

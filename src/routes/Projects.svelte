@@ -7,8 +7,20 @@
 
 <Nav />
 
-<Card image_src="/src/assets/teardrop.png" title="Python: Teardrop Helix" />
+<Card image_src="/src/assets/teardrop.png" title="Python: Teardrop Helix">
+    <p>
+        In collaboration with Stan Carroll at Beyond Metal, I wrote a small
+        script to generate some composite curves, spiralling around a
+        teardrop-type shape made up of a sphere with a cone on top.
+    </p>
+    <AnchorButton
+        href="https://github.com/matthewCmatt/teardrop-helix"
+        label="Source Code"
+        ext
+    />
+</Card>
 
-<Card image_src="/src/assets/teardrop.png" />
-
-<Card image_src="/src/assets/teardrop.png" />
+<Card
+    title="View more on my GitHub..."
+    link="https://github.com/matthewCmatt"
+/>
