@@ -56,7 +56,8 @@
 
     .close {
         position: absolute;
-        width: 3em;
-        height: 3em;
+        right: 1rem;
+        width: 3rem;
+        height: 3rem;
     }
 </style>
