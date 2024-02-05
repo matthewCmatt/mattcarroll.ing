@@ -1,5 +1,6 @@
 <script>
     import Modal from "./Modal.svelte";
+    import NewTabIcon from "../assets/NewTabIcon.svg.svelte";
 
     export let image_src = "";
     export let image_alt = "";
@@ -13,11 +14,7 @@
     <img class="cover" src={image_src} alt={image_alt} />
     <h2>
         {title}
-        <img
-            class="icon"
-            alt="Open Link Icon"
-            src="/src/assets/noun-new-tab-1167424.svg"
-        />
+        <NewTabIcon />
     </h2>
 </button>
 
@@ -56,13 +53,5 @@
         margin-left: calc(-1 * var(--offset));
         margin-top: calc(-1 * var(--offset));
         aspect-ratio: 3 / 2;
-    }
-
-    .icon {
-        display: inline-block;
-        height: 1em;
-        z-index: 1;
-        right: 0;
-        top: 0;
     }
 </style>
