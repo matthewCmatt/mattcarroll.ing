@@ -11,7 +11,7 @@
     <path
         d="M17 7L7 17M7 7L17 17"
         stroke="currentColor"
-        stroke-width="3"
+        stroke-width="2px"
         stroke-linecap="round"
         stroke-linejoin="round"
     />
