@@ -1,6 +1,4 @@
 <script>
-    import { onMount } from "svelte";
-    import NewTabIcon from "./NewTabIcon.svelte";
     import Modal from "./Modal.svelte";
 
     export let image_src = "";

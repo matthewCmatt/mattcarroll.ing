@@ -1,6 +1,4 @@
 <script>
-    import NewTabIcon from "./NewTabIcon.svelte";
-
     let dialog;
 
     export function showModal() {
