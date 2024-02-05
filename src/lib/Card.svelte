@@ -1,21 +1,14 @@
 <script>
     import { onMount } from "svelte";
     import NewTabIcon from "./NewTabIcon.svelte";
+    import Modal from "./Modal.svelte";
 
     export let image_src = "";
     export let image_alt = "";
     export let title = "Card Title";
     export let description = "Description description description.";
 
-    let dialog;
-
-    function showModal() {
-        dialog.showModal();
-    }
-
-    function closeModal() {
-        dialog.close();
-    }
+    let showModal;
 </script>
 
 <button on:click={showModal} class="card">
@@ -24,12 +17,11 @@
     <h2>{title}</h2>
 </button>
 
-<dialog bind:this={dialog} class="card">
-    <button on:click={closeModal}> Close </button>
-    <img src={image_src} alt={image_alt} />
+<Modal bind:showModal>
+    <img class="cover" src={image_src} alt={image_alt} />
     <h2>{title}</h2>
     {description}
-</dialog>
+</Modal>
 
 <style>
     .card {
@@ -53,17 +45,6 @@
 
     button.card {
         display: block;
-    }
-
-    dialog {
-        position: absolute;
-        overflow: scroll;
-        max-height: 100%;
-        overflow-y: auto;
-    }
-
-    dialog::backdrop {
-        background-image: rgb(0, 0, 0);
     }
 
     .cover {
