@@ -1,10 +1,16 @@
 <script>
+  import IconExternal from "../assets/IconExternal.svg.svelte";
+
   export let href = "";
   export let label;
+  export let ext = false;
 </script>
 
 <a {href}>
   {label}
+  {#if ext}
+    <IconExternal color="var(--color-a)" />
+  {/if}
 </a>
 
 <style>

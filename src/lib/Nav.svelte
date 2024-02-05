@@ -14,6 +14,6 @@
         <AnchorButton href="/" label="Home" />
     {/if}
     <AnchorButton href="/projects" label="Projects" />
-    <AnchorButton href={github} label="GitHub" />
-    <AnchorButton href={linkedin} label="LinkedIn" />
+    <AnchorButton href={github} label="GitHub" ext />
+    <AnchorButton href={linkedin} label="LinkedIn" ext />
 </nav>

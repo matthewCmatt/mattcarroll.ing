@@ -1,4 +1,6 @@
 <script>
+    import IconClose from "../assets/IconClose.svg.svelte";
+
     let dialog;
 
     export function showModal() {
@@ -11,7 +13,9 @@
 </script>
 
 <dialog bind:this={dialog} class="card">
-    <button on:click={closeModal}> Close </button>
+    <button on:click={closeModal} alt="Close project">
+        <IconClose />
+    </button>
     <div class="content">
         <slot />
     </div>
@@ -20,7 +24,7 @@
 <style>
     dialog {
         position: absolute;
-        left: calc(50% - 20rem);
+        margin: 6rem auto;
         overflow-x: hidden;
         overflow-y: auto;
 
@@ -37,14 +41,30 @@
         border-color: hwb(0 44% 56%);
 
         padding: var(--offset);
-        margin: 1.5em;
+        box-shadow: 0px 2px 10px 10px rgba(0, 0, 0, 0.5);
     }
 
     dialog::backdrop {
-        background-image: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.75);
     }
 
-    button,
+    button {
+        all: unset;
+        padding: auto;
+        position: absolute;
+        background-color: black;
+        font-size: 1.5rem;
+        right: 1.5rem;
+        top: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        transition: background-color 0.1s;
+    }
+
+    button:hover {
+        background-color: gray;
+    }
+
     .content {
         display: block;
     }

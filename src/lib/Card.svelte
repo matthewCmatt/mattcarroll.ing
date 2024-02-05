@@ -1,6 +1,6 @@
 <script>
     import Modal from "./Modal.svelte";
-    import NewTabIcon from "../assets/NewTabIcon.svg.svelte";
+    import IconExpand from "../assets/IconExpand.svg.svelte";
 
     export let image_src = "";
     export let image_alt = "";
@@ -14,7 +14,6 @@
     <img class="cover" src={image_src} alt={image_alt} />
     <h2>
         {title}
-        <NewTabIcon />
     </h2>
 </button>
 
@@ -42,6 +41,12 @@
 
         padding: var(--offset);
         margin: 1.5em;
+
+        transition: box-shadow 0.1s;
+    }
+
+    .card:hover {
+        box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.5);
     }
 
     button.card {
