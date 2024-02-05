@@ -5,7 +5,6 @@
     export let image_src = "";
     export let image_alt = "";
     export let title = "Card Title";
-    export let description = "Description description description.";
     export let link = false;
 
     function navigateTo() {
