@@ -1,6 +1,5 @@
 <script>
     import Modal from "./Modal.svelte";
-    import IconExpand from "../assets/IconExpand.svg.svelte";
 
     export let image_src = "";
     export let image_alt = "";
@@ -10,7 +9,7 @@
     let showModal;
 </script>
 
-<button on:click={showModal} class="card">
+<button on:click={showModal} class=" card hoverable">
     <img class="cover" src={image_src} alt={image_alt} />
     <h2>
         {title}
@@ -28,25 +27,22 @@
         --border-radius: 5px;
         --offset: max(1em, var(--border-radius));
 
-        width: 40em;
+        width: 50em;
 
         background-color: var(--color-button-bg);
-
         border-radius: var(--border-radius);
-        border-style: solid;
-        border-width: 1px;
-        border-color: hwb(0 44% 56%);
+        font-family: inherit;
 
         overflow: hidden;
 
         padding: var(--offset);
         margin: 1.5em;
 
-        transition: box-shadow 0.1s;
+        transition: 0.25s;
     }
 
     .card:hover {
-        box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 2px 10px 10px rgba(0, 0, 0, 0.2);
     }
 
     button.card {

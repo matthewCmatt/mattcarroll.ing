@@ -2,8 +2,8 @@
     Icon from Untitled UI
 -->
 <svg
-    width="100%"
-    height="100%"
+    width="2em"
+    height="2em"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -19,9 +19,7 @@
 
 <style>
     svg {
-        display: inline-block;
-        position: relative;
-        height: 1em;
+        margin: auto;
         z-index: 1;
         fill: var(--color-text);
     }

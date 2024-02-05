@@ -43,3 +43,19 @@ h1 {
   text-align: center;
   position: relative;
 }
+
+.hoverable {
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.hoverable:hover {
+  border-color: var(--color-button-border);
+  color: var(--color-a-hover);
+}
+
+.hoverable:focus,
+.hoverable:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

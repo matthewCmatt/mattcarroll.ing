@@ -1,5 +1,6 @@
 <script>
     import IconClose from "../assets/IconClose.svg.svelte";
+    import Button from "./Button.svelte";
 
     let dialog;
 
@@ -13,9 +14,11 @@
 </script>
 
 <dialog bind:this={dialog} class="card">
-    <button on:click={closeModal} alt="Close project">
-        <IconClose />
-    </button>
+    <div class="close">
+        <Button onClick={closeModal} alt="Close project">
+            <IconClose />
+        </Button>
+    </div>
     <div class="content">
         <slot />
     </div>
@@ -41,31 +44,19 @@
         border-color: hwb(0 44% 56%);
 
         padding: var(--offset);
-        box-shadow: 0px 2px 10px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 2px 10px 10 px rgba(0, 0, 0, 0.5);
     }
 
     dialog::backdrop {
         background-color: rgba(0, 0, 0, 0.75);
     }
-
-    button {
-        all: unset;
-        padding: auto;
-        position: absolute;
-        background-color: black;
-        font-size: 1.5rem;
-        right: 1.5rem;
-        top: 1.5rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        transition: background-color 0.1s;
-    }
-
-    button:hover {
-        background-color: gray;
-    }
-
     .content {
         display: block;
+    }
+
+    .close {
+        position: absolute;
+        width: 3em;
+        height: 3em;
     }
 </style>
