@@ -12,9 +12,15 @@
 </script>
 
 <button on:click={showModal} class="card">
-    <NewTabIcon class="icon" />
     <img class="cover" src={image_src} alt={image_alt} />
-    <h2>{title}</h2>
+    <h2>
+        {title}
+        <img
+            class="icon"
+            alt="Open Link Icon"
+            src="/src/assets/noun-new-tab-1167424.svg"
+        />
+    </h2>
 </button>
 
 <Modal bind:showModal>
@@ -55,7 +61,8 @@
     }
 
     .icon {
-        position: float;
+        display: inline-block;
+        height: 1em;
         z-index: 1;
         right: 0;
         top: 0;

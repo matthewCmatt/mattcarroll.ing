@@ -23,7 +23,7 @@
     dialog {
         position: absolute;
         left: calc(50% - 20rem);
-        overflow: scroll;
+        overflow-x: hidden;
         overflow-y: auto;
 
         --border-radius: 5px;
