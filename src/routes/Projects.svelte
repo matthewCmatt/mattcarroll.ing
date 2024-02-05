@@ -3,11 +3,13 @@
     import AnchorButton from "/src/lib/AnchorButton.svelte";
     import Nav from "/src/lib/Nav.svelte";
     import Card from "/src/lib/Card.svelte";
+
+    import teardrop from "/src/assets/teardrop.png";
 </script>
 
 <Nav />
 
-<Card image_src="/src/assets/teardrop.png" title="Python: Teardrop Helix">
+<Card image_src={teardrop} title="Python: Teardrop Helix">
     <p>
         In collaboration with Stan Carroll at Beyond Metal, I wrote a small
         script to generate some composite curves, spiralling around a
