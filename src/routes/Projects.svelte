@@ -1,74 +1,14 @@
 <script>
     import { Link } from "svelte-routing";
     import AnchorButton from "/src/lib/AnchorButton.svelte";
+    import Nav from "/src/lib/Nav.svelte";
+    import Card from "/src/lib/Card.svelte";
 </script>
 
-<Link to="/">
-    <AnchorButton label="Home" />
-</Link>
+<Nav />
 
-Projects go here.<br />
+<Card image_src="/src/assets/teardrop.png" title="Python: Teardrop Helix" />
 
-Projects go here.<br />
+<Card image_src="/src/assets/teardrop.png" />
 
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
-
-Projects go here.<br />
+<Card image_src="/src/assets/teardrop.png" />
