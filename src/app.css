@@ -12,6 +12,15 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
 a {
     font-weight: 500;
     color: var(--color-a);
@@ -20,15 +29,6 @@ a {
 
 a:hover {
     color: var(--color-a-hover);
-}
-
-body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
-    overflow-x: hidden;
 }
 
 h1 {

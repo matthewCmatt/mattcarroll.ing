@@ -13,7 +13,16 @@
     }
 </script>
 
-<dialog bind:this={dialog} class="card">
+<!-- svelte-ignore a11y-no-noninteractive-element-interactions   -->
+<dialog
+    class="card"
+    tabindex="-1"
+    bind:this={dialog}
+    on:click|self={closeModal}
+    on:keydown={(event) => {
+        if (event.key === "Escape") closeModal();
+    }}
+>
     <div class="close">
         <Button onClick={closeModal} alt="Close project">
             <IconClose />

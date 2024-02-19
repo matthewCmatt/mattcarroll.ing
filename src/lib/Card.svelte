@@ -14,7 +14,7 @@
     $: onClick = link ? navigateTo : showModal;
 </script>
 
-<button on:click={onClick} class=" card hoverable">
+<button on:click={onClick} class="card hoverable">
     {#if image_src}
         <img class="cover" src={image_src} alt={image_alt} />
     {/if}
