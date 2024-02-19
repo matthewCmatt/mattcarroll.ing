@@ -1,9 +1,10 @@
 <script>
+    import { fade } from "svelte/transition";
     import InlineTransparent from "/src/lib/InlineTransparent.svelte";
     import Nav from "/src/lib/Nav.svelte";
 </script>
 
-<main>
+<main in:fade|global>
     <div id="heading">
         <h1>
             Matt Carroll<InlineTransparent>.ing</InlineTransparent>
