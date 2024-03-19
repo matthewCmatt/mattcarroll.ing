@@ -21,6 +21,10 @@ body {
     overflow-x: hidden;
 }
 
+body:has(dialog[open]){
+    
+}
+
 a {
     font-weight: 500;
     color: var(--color-a);

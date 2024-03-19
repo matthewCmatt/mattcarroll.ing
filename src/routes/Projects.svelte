@@ -14,7 +14,8 @@
 <main in:fade|global>
     <Nav />
 
-    <Card image_src={teardrop} title="Python: Teardrop Helix">
+    <Card image_src={teardrop}>
+        <svelte:fragment slot="title">Python: Teardrop Helix</svelte:fragment>
         <p>
             In collaboration with Stan Carroll at Beyond Metal, I wrote a small
             script to generate some composite curves, spiralling around a
@@ -27,7 +28,10 @@
         />
     </Card>
 
-    <Card image_src={plentyophish} title="Hacklahoma 2022: PlentyO'Phish">
+    <Card image_src={plentyophish}>
+        <svelte:fragment slot="title">
+            Hacklahoma 2022: PlentyO'Phish
+        </svelte:fragment>
         <p>
             Winning the 1st place prize for Hacklahoma 2022, our project, Plenty
             o' Phish, was a game centered around writing phishing emails.
@@ -44,7 +48,8 @@
         />
     </Card>
 
-    <Card image_src={airou} title="AIROU Lab Site">
+    <Card image_src={airou}>
+        <svelte:fragment slot="title">AIROU Lab Site</svelte:fragment>
         <p>
             I redesigned the site for my robotics lab at the University of
             Oklahoma from scratch using Eleventy SSG, Nunjucks templating, and
@@ -58,13 +63,14 @@
         />
     </Card>
 
-    <Card
-        image_src={internetofpings}
-        title="Hacklahoma 2024: Internet of Pings"
-    >
+    <Card image_src={internetofpings}>
+        <svelte:fragment slot="title">
+            Hacklahoma 2024: Internet of Pings
+        </svelte:fragment>
+
         <p>
             For Hacklahoma 2024, I worked to create a browser-based network
-            simulator and learing tool with the goal of teaching the OSI model.
+            simulator and learning tool with the goal of teaching the OSI model.
         </p>
         <AnchorButton
             href="https://internetofpings.study/"
@@ -78,8 +84,9 @@
         />
     </Card>
 
-    <Card
-        title="View more on my GitHub..."
-        link="https://github.com/matthewCmatt"
-    />
+    <Card link="https://github.com/matthewCmatt">
+        <svelte:fragment slot="title">
+            View more on my GitHub...
+        </svelte:fragment>
+    </Card>
 </main>
