@@ -1,30 +1,18 @@
 <script>
     import Modal from "./Modal.svelte";
-    import { navigate } from "svelte-routing";
 
     export let image_src = "";
     export let image_alt = "";
-    export let link = false;
 
     let showModal;
 </script>
 
-{#if !link}
-    <button on:click={showModal} class="card hoverable">
-        <img class="cover" src={image_src} alt={image_alt} />
-        <h2>
-            <slot name="title">No Title was provided</slot>
-        </h2>
-    </button>
-{:else}
-    <a href={link}>
-        <button class="card hoverable">
-            <h2>
-                <slot name="title">No Title was provided</slot>
-            </h2>
-        </button>
-    </a>
-{/if}
+<button on:click={showModal} class="card hoverable">
+    <img class="cover" src={image_src} alt={image_alt} />
+    <h2>
+        <slot name="title">No Title was provided</slot>
+    </h2>
+</button>
 
 <Modal bind:showModal>
     <img class="cover" src={image_src} alt={image_alt} />
@@ -36,7 +24,6 @@
 
 <style>
     .card {
-        --border-radius: 5px;
         --offset: max(1em, var(--border-radius));
 
         width: 50em;

@@ -7,8 +7,6 @@
 </script>
 
 <Router {url}>
-    <div>
-        <Route path="/"><Home /></Route>
-        <Route path="/projects"><Projects /></Route>
-    </div>
+    <Route><Home /></Route>
+    <Route path="/projects"><Projects /></Route>
 </Router>

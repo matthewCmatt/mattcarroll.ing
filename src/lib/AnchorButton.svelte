@@ -16,7 +16,7 @@
 <style>
     a {
         display: inline-block;
-        border-radius: 8px;
+        border-radius: var(--border-radius);
         padding: 0.6em 1.2em;
         margin: 0.4em;
         font-size: 1em;

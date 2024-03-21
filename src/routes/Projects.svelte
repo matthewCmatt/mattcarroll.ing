@@ -1,5 +1,4 @@
 <script>
-    import { Link } from "svelte-routing";
     import AnchorButton from "/src/lib/AnchorButton.svelte";
     import Nav from "/src/lib/Nav.svelte";
     import Card from "/src/lib/Card.svelte";
@@ -8,10 +7,9 @@
     import plentyophish from "/src/assets/plentyophish.png";
     import internetofpings from "/src/assets/internetofpings.png";
     import airou from "/src/assets/airou.png";
-    import { fade } from "svelte/transition";
 </script>
 
-<main in:fade|global>
+<main>
     <Nav />
 
     <Card image_src={teardrop}>
@@ -84,9 +82,9 @@
         />
     </Card>
 
-    <Card link="https://github.com/matthewCmatt">
-        <svelte:fragment slot="title">
-            View more on my GitHub...
-        </svelte:fragment>
-    </Card>
+    <AnchorButton
+        href="https://github.com/matthewCmatt"
+        label="View more on my GitHub"
+        ext="True"
+    ></AnchorButton>
 </main>
