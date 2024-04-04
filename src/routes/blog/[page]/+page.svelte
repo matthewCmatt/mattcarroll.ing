@@ -1,17 +1,16 @@
 <script lang="ts">
 	import IconArrowLeft from '$lib/assets/icons/IconArrowLeft.svg.svelte';
 	import type { PageData } from './$types';
+	import SvelteMarkdown from 'svelte-markdown';
 
 	export let data: PageData;
-
-	import SvelteMarkdown from 'svelte-markdown';
 </script>
 
-<a href="/" id="blog-button">
+<a href="/" id="home-button">
 	<div class="icon">
 		<IconArrowLeft />
 	</div>
-	<div>Blog</div>
+	<div>Home</div>
 </a>
 
 <div class="md">
@@ -24,10 +23,21 @@
 		max-width: 80ch;
 	}
 
-	a {
+	#home-button {
 		margin-top: 5rem;
 		display: flex;
 		gap: 5px;
-		right: 0px;
+
+		cursor: pointer;
+
+		color: inherit;
+	}
+
+	#home-button .icon {
+		transition: 0.2s;
+	}
+
+	#home-button:hover .icon {
+		transform: translate(-10px, 0);
 	}
 </style>
