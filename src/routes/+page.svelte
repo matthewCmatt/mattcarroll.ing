@@ -13,13 +13,15 @@
 
 <main>
 	<div id="landing">
-		<div id="heading">
+		<div id="title">
 			<h1>
 				Matt Carroll<InlineTransparent>.ing</InlineTransparent>
 			</h1>
 			<p>Computer Science Undergraduate at the University of Oklahoma</p>
 		</div>
-		<Nav excludeHome />
+		<div id="buttons">
+			<Nav excludeHome />
+		</div>
 	</div>
 
 	<Card image_src={teardrop}>
@@ -80,9 +82,15 @@
 	}
 
 	#landing {
+		width: 100%;
 		display: flex;
 		height: 100svh;
-		flex-direction: column;
+		justify-content: space-between;
 		align-items: center;
+	}
+
+	#title,
+	#buttons {
+		margin: 0 10vw;
 	}
 </style>
