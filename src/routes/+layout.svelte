@@ -1,7 +1,7 @@
 <script>
-	import '$lib/css/app.css';
-	import '$lib/css/theme.css';
-	import '$lib/css/markdown.css';
+	import '$lib/style/app.css';
+	import '$lib/style/theme.css';
+	import '$lib/style/markdown.css';
 </script>
 
 <main>
