@@ -1,0 +1,65 @@
+:root {
+    font-family: 'Young Serif', Georgia, serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    background-color: var(--color-background);
+    color: var(--color-text);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body:has(dialog[open]){
+    
+}
+
+a {
+    font-weight: 500;
+    color: var(--color-a);
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: var(--color-a-hover);
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.hoverable {
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.hoverable:hover {
+    border-color: var(--color-button-border);
+    color: var(--color-a-hover);
+}
+
+.hoverable:focus,
+.hoverable:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
