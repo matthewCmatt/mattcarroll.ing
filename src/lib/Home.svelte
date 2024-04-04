@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { InlineTransparent, AnchorButton, Card } from './index';
 
-	import teardrop from '/src/assets/teardrop.png';
-	import plentyophish from '/src/assets/plentyophish.png';
-	import internetofpings from '/src/assets/internetofpings.png';
-	import airou from '/src/assets/airou.png';
-	import IconArrowDown from '../assets/IconArrowDown.svg.svelte';
+	import IconArrowDown from '$lib/assets/IconArrowDown.svg.svelte';
+
+	import teardrop from '$lib/assets/teardrop.png';
+	import plentyophish from '$lib/assets/plentyophish.png';
+	import internetofpings from '$lib/assets/internetofpings.png';
+	import airou from '$lib/assets/airou.png';
 </script>
 
 <main>
