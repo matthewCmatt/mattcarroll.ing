@@ -2,4 +2,4 @@
 	import { Home } from '$lib/index';
 </script>
 
-<Home></Home>
+<Home />

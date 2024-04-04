@@ -1,4 +1,5 @@
 <script lang="ts">
+	import IconArrowLeft from '$lib/assets/icons/IconArrowLeft.svg.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -6,13 +7,27 @@
 	import SvelteMarkdown from 'svelte-markdown';
 </script>
 
-<main>
+<a href="/" id="blog-button">
+	<div class="icon">
+		<IconArrowLeft />
+	</div>
+	<div>Blog</div>
+</a>
+
+<div class="md">
 	<SvelteMarkdown source={data.source} />
-</main>
+</div>
 
 <style>
-	main {
+	.md {
+		margin: 5rem 0;
+		max-width: 80ch;
+	}
+
+	a {
+		margin-top: 5rem;
 		display: flex;
-		flex-direction: column;
+		gap: 5px;
+		right: 0px;
 	}
 </style>

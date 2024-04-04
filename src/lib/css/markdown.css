@@ -1,0 +1,17 @@
+.md h1, h2, h3, p {
+ margin: 2rem 0;
+}
+
+.md h1, h2, h3 {
+    text-align: center;
+}
+
+.md img {
+    display: block;
+    max-width: 70%;
+    margin: auto;
+}
+
+.md p {
+    text-align: justify;
+}
