@@ -19,8 +19,8 @@
     --color-background: var(--clr-inkwell);
     --color-text: var(--color-white-soft);
     --color-button-bg: var(--clr-pink);
-    --color-button-border: var(--color-yellow);
-    --color-a: var(--color-flame);
+    --color-button-border: var(--clr-pink);
+    --color-a: var(--clr-pink);
     --color-a-hover: var(--color-yellow);
     --color-card-bg: var(--color-black);
 }
