@@ -112,6 +112,8 @@
 		transform: translate(0, -50%);
 
 		text-align: center;
+
+		color: inherit;
 	}
 
 	#blog-button .icon {
@@ -119,6 +121,6 @@
 	}
 
 	#blog-button:hover .icon {
-		transform: translate(0, 5px);
+		transform: translate(0, 10px);
 	}
 </style>
