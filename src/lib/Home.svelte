@@ -5,6 +5,7 @@
 	import plentyophish from '/src/assets/plentyophish.png';
 	import internetofpings from '/src/assets/internetofpings.png';
 	import airou from '/src/assets/airou.png';
+	import IconArrowDown from '../assets/IconArrowDown.svg.svelte';
 </script>
 
 <main>
@@ -23,19 +24,22 @@
 				ext
 			/>
 		</div>
+		<a id="blog-button" href="#blog">
+			<div>Blog</div>
+			<div class="icon">
+				<IconArrowDown />
+			</div>
+		</a>
 	</div>
 
-	<Card image_src={teardrop}>
+	<hr id="blog" />
+
+	<Card href="/blog/teardrop-helix" image_src={teardrop}>
 		<svelte:fragment slot="title">Python: Teardrop Helix</svelte:fragment>
-		<p>
-			In collaboration with Stan Carroll at Beyond Metal, I wrote a small script to generate some
-			composite curves, spiralling around a teardrop-type shape made up of a sphere with a cone on
-			top.
-		</p>
 		<AnchorButton href="https://github.com/matthewCmatt/teardrop-helix" label="Source Code" ext />
 	</Card>
 
-	<Card image_src={plentyophish}>
+	<Card href="/blog/plenty-o-phish" image_src={plentyophish}>
 		<svelte:fragment slot="title">Hacklahoma 2022: PlentyO'Phish</svelte:fragment>
 		<p>
 			Winning the 1st place prize for Hacklahoma 2022, our project, Plenty o' Phish, was a game
@@ -45,7 +49,7 @@
 		<AnchorButton href="https://devpost.com/software/plenty-o-phish" label="DevPost" ext />
 	</Card>
 
-	<Card image_src={airou}>
+	<Card href="/blog/teardrop-helix" image_src={airou}>
 		<svelte:fragment slot="title">AIROU Lab Site</svelte:fragment>
 		<p>
 			I redesigned the site for my robotics lab at the University of Oklahoma from scratch using
@@ -55,7 +59,7 @@
 		<AnchorButton href="https://github.com/airou-lab/website" label="Source Code" ext />
 	</Card>
 
-	<Card image_src={internetofpings}>
+	<Card href="/blog/teardrop-helix" image_src={internetofpings}>
 		<svelte:fragment slot="title">Hacklahoma 2024: Internet of Pings</svelte:fragment>
 
 		<p>
@@ -95,5 +99,26 @@
 	#title,
 	#buttons {
 		margin: 0 10vw;
+	}
+
+	#blog-button {
+		display: flex;
+		flex-direction: column;
+
+		position: absolute;
+		bottom: 3rem;
+
+		left: 50%;
+		transform: translate(0, -50%);
+
+		text-align: center;
+	}
+
+	#blog-button .icon {
+		transition: 0.2s;
+	}
+
+	#blog-button:hover .icon {
+		transform: translate(0, 5px);
 	}
 </style>

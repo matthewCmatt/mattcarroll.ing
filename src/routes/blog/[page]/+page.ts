@@ -1,11 +1,13 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+
+import source from '$lib/data/teardrop-helix.md?raw';
+
 export const load: PageLoad = ({ params }) => {
-	if (params.page === 'hello-world') {
+	if (params.page === 'teardrop-helix') {
 		return {
-			title: 'Hello world!',
-			source: 'source'
+			source: source
 		};
 	}
-	error(404, 'Not found');
+	error(404, 'Post not found');
 };
