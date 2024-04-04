@@ -1,12 +1,17 @@
 <script lang="ts">
 	import { InlineTransparent, AnchorButton, Card } from './index';
-
 	import IconArrowDown from '$lib/assets/IconArrowDown.svg.svelte';
 
 	import teardrop from '$lib/assets/teardrop.png';
 	import plentyophish from '$lib/assets/plentyophish.png';
 	import internetofpings from '$lib/assets/internetofpings.png';
 	import airou from '$lib/assets/airou.png';
+
+	let blog_start: HTMLElement;
+
+	function scrollToBlog() {
+		blog_start.scrollIntoView(true);
+	}
 </script>
 
 <main>
@@ -25,15 +30,15 @@
 				ext
 			/>
 		</div>
-		<a id="blog-button" href="#blog">
+		<button id="blog-button" on:click={scrollToBlog}>
 			<div>Blog</div>
 			<div class="icon">
 				<IconArrowDown />
 			</div>
-		</a>
+		</button>
 	</div>
 
-	<hr id="blog" />
+	<div bind:this={blog_start} />
 
 	<Card href="/blog/teardrop-helix" image_src={teardrop}>
 		<svelte:fragment slot="title">Python: Teardrop Helix</svelte:fragment>
@@ -103,6 +108,10 @@
 	}
 
 	#blog-button {
+		all: unset;
+
+		cursor: pointer;
+
 		display: flex;
 		flex-direction: column;
 
