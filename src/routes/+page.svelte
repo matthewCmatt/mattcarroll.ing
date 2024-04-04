@@ -1,6 +1,5 @@
 <script lang="ts">
 	import InlineTransparent from '$lib/InlineTransparent.svelte';
-	import Nav from '$lib/Nav.svelte';
 
 	import AnchorButton from '$lib/AnchorButton.svelte';
 	import Card from '$lib/Card.svelte';
@@ -20,7 +19,12 @@
 			<p>Computer Science Undergraduate at the University of Oklahoma</p>
 		</div>
 		<div id="buttons">
-			<Nav excludeHome />
+			<AnchorButton href="https://github.com/matthewCmatt" label="GitHub" ext />
+			<AnchorButton
+				href="https://www.linkedin.com/in/matthew-carroll-ab9129182/"
+				label="LinkedIn"
+				ext
+			/>
 		</div>
 	</div>
 
@@ -79,6 +83,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-bottom: 8rem;
 	}
 
 	#landing {
