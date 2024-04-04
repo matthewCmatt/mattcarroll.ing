@@ -1,8 +1,5 @@
 <script lang="ts">
-	import InlineTransparent from '$lib/InlineTransparent.svelte';
-
-	import AnchorButton from '$lib/AnchorButton.svelte';
-	import Card from '$lib/Card.svelte';
+	import { InlineTransparent, AnchorButton, Card } from './index';
 
 	import teardrop from '/src/assets/teardrop.png';
 	import plentyophish from '/src/assets/plentyophish.png';
