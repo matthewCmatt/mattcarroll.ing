@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
-import source from '$lib/data/teardrop-helix.md?raw';
+import source from '$lib/posts/teardrop-helix.md?raw';
 
 export const load: PageLoad = ({ params }) => {
 	if (params.page === 'teardrop-helix') {
