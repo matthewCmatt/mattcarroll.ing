@@ -2,10 +2,10 @@
 	import { InlineTransparent, AnchorButton, Card } from './index';
 	import IconArrowDown from '$lib/assets/IconArrowDown.svg.svelte';
 
-	import teardrop from '$lib/assets/teardrop.png';
-	import plentyophish from '$lib/assets/plentyophish.png';
-	import internetofpings from '$lib/assets/internetofpings.png';
-	import airou from '$lib/assets/airou.png';
+	import teardrop from '$lib/assets/images/teardrop.png';
+	import plentyophish from '$lib/assets/images/plentyophish.png';
+	import internetofpings from '$lib/assets/images/internetofpings.png';
+	import airou from '$lib/assets/images/airou.png';
 
 	let blog_start: HTMLElement;
 
