@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import IconExternal from '../assets/IconExternal.svg.svelte';
 
 	export let href = '';
-	export let label;
+	export let label: string;
 	export let ext = false;
 </script>
 

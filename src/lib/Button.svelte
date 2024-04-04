@@ -1,11 +1,8 @@
-<script>
-	import IconExternal from '../assets/IconExternal.svg.svelte';
-
-	export let onClick;
-	export let alt;
+<script lang="ts">
+	export let onClick: Function;
 </script>
 
-<button on:click={onClick} {alt} class="hoverable">
+<button on:click={() => onClick()} class="hoverable">
 	<slot />
 </button>
 
