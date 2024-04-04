@@ -28,7 +28,7 @@
 
 		width: 50em;
 
-		background-color: darken(var(--color-background));
+		background-color: var(--color-card-bg);
 		border-radius: var(--border-radius);
 		font-family: inherit;
 
