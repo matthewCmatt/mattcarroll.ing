@@ -6,25 +6,30 @@
 	export let data: PageData;
 </script>
 
-<a href="/" id="home-button">
-	<div class="icon">
-		<IconArrowLeft />
-	</div>
-	<div>Home</div>
-</a>
+<div class="full">
+	<a href="/" id="home-button">
+		<div class="icon">
+			<IconArrowLeft />
+		</div>
+		<div>Home</div>
+	</a>
+</div>
 
 <div class="md">
 	<SvelteMarkdown source={data.source} />
 </div>
 
 <style>
+	.full {
+		margin-top: 5rem;
+		width: min(80ch, 100vw);
+	}
 	.md {
 		margin: 5rem 0;
 		max-width: 80ch;
 	}
 
 	#home-button {
-		margin-top: 5rem;
 		display: flex;
 		gap: 5px;
 

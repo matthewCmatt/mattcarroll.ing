@@ -2,13 +2,14 @@
  margin: 2rem 0;
 }
 
-.md h1, h2, h3 {
+.md h1 {
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .md img {
     display: block;
-    max-width: 70%;
+    max-width: 65ch;
     margin: auto;
 }
 
