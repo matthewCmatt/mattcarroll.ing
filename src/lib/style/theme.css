@@ -24,11 +24,3 @@
     --color-a-hover: var(--clr-inkwell);
     --color-card-bg: var(--color-black);
 }
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-background: var(--color-light);
-        --color-text: var(--color-dark);
-        --color-button-bg: var(--color-off-white);
-    }
-}
