@@ -1,6 +1,6 @@
 ---
 title: "Hacklahoma '24: Internet of Pings"
-cover: '/src/lib/assets/images/internetofpings.png'
+cover: '/internetofpings.png'
 cover_alt: 'A tear-drop-shaped helix'
 published: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "AIROU Lab Site"
-cover: '/src/lib/assets/images/airou.png'
+cover: '/airou.png'
 cover_alt: 'A tear-drop-shaped helix'
 published: true
 ---

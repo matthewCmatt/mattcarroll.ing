@@ -1,11 +1,6 @@
 <script lang="ts">
 	import { InlineTransparent, AnchorButton, Card } from './index';
 	import IconArrowDown from '$lib/assets/icons/IconArrowDown.svg.svelte';
-
-	import teardrop from '$lib/assets/images/teardrop.png';
-	import plentyophish from '$lib/assets/images/plentyophish.png';
-	import internetofpings from '$lib/assets/images/internetofpings.png';
-	import airou from '$lib/assets/images/airou.png';
 	import type { PageData } from '../routes/$types';
 
 	let blog_start: HTMLElement;

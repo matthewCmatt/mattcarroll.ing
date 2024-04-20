@@ -1,6 +1,6 @@
 ---
 title: "Python: Teardrop Helix"
-cover: '/src/lib/assets/images/teardrop.png'
+cover: '/teardrop.png'
 cover_alt: 'A tear-drop-shaped helix'
 published: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Hacklahoma '22: Plenty o' Phish"
-cover: '/src/lib/assets/images/plentyophish.png'
+cover: '/plentyophish.png'
 cover_alt: 'A tear-drop-shaped helix'
 published: true
 ---
