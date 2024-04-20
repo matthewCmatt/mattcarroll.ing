@@ -1,11 +1,11 @@
 <script lang="ts">
-	export let image_src = '';
+	export let image_src: URL;
 	export let image_alt = '';
 	export let href = '';
 </script>
 
 <a {href} class="card hoverable">
-	<img class="cover" src={image_src} alt={image_alt} />
+	<img class="cover" src={image_src.toString()} alt={image_alt} />
 	<h2>
 		<slot name="title">No Title was provided</slot>
 	</h2>

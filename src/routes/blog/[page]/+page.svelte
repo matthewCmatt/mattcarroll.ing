@@ -1,7 +1,6 @@
 <script lang="ts">
 	import IconArrowLeft from '$lib/assets/icons/IconArrowLeft.svg.svelte';
 	import type { PageData } from './$types';
-	import SvelteMarkdown from 'svelte-markdown';
 
 	export let data: PageData;
 </script>
@@ -15,15 +14,18 @@
 	</a>
 </div>
 
-<div class="md">
-	<SvelteMarkdown source={data.source} />
-</div>
+<article class="md">
+	<h1>{data.meta.title}</h1>
+	<img src={data.meta.cover} alt={data.meta.cover_alt} />
+	<svelte:component this={data.content} />
+</article>
 
 <style>
 	.full {
 		margin-top: 5rem;
 		width: min(80ch, 100vw);
 	}
+
 	.md {
 		margin: 5rem 0;
 		max-width: 80ch;

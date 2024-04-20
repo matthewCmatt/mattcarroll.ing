@@ -1,6 +1,6 @@
 <script>
-	import '$lib/style/app.css';
 	import '$lib/style/theme.css';
+	import '$lib/style/app.css';
 	import '$lib/style/markdown.css';
 </script>
 

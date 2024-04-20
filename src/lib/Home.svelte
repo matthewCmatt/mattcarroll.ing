@@ -6,12 +6,15 @@
 	import plentyophish from '$lib/assets/images/plentyophish.png';
 	import internetofpings from '$lib/assets/images/internetofpings.png';
 	import airou from '$lib/assets/images/airou.png';
+	import type { PageData } from '../routes/$types';
 
 	let blog_start: HTMLElement;
 
 	function scrollToBlog() {
 		blog_start.scrollIntoView(true);
 	}
+
+	export let data: PageData;
 </script>
 
 <main>
@@ -40,44 +43,15 @@
 
 	<div bind:this={blog_start} />
 
-	<Card href="/blog/teardrop-helix" image_src={teardrop}>
-		<svelte:fragment slot="title">Python: Teardrop Helix</svelte:fragment>
-		<AnchorButton href="https://github.com/matthewCmatt/teardrop-helix" label="Source Code" ext />
-	</Card>
+	<ul>
+		{#each data.posts as post}
+			<Card href={'blog/' + post.slug} image_src={post.cover}>
+				<svelte:fragment slot="title">{post.title}</svelte:fragment>
+			</Card>
+		{/each}
+	</ul>
 
-	<Card href="/blog/plenty-o-phish" image_src={plentyophish}>
-		<svelte:fragment slot="title">Hacklahoma 2022: PlentyO'Phish</svelte:fragment>
-		<p>
-			Winning the 1st place prize for Hacklahoma 2022, our project, Plenty o' Phish, was a game
-			centered around writing phishing emails.
-		</p>
-		<AnchorButton href="https://plentyophish.tauser.us/" label="Hosted Site" ext />
-		<AnchorButton href="https://devpost.com/software/plenty-o-phish" label="DevPost" ext />
-	</Card>
-
-	<Card href="/blog/teardrop-helix" image_src={airou}>
-		<svelte:fragment slot="title">AIROU Lab Site</svelte:fragment>
-		<p>
-			I redesigned the site for my robotics lab at the University of Oklahoma from scratch using
-			Eleventy SSG, Nunjucks templating, and vanilla CSS.
-		</p>
-		<AnchorButton href="https://ou.edu/airou" label="Hosted Site" ext />
-		<AnchorButton href="https://github.com/airou-lab/website" label="Source Code" ext />
-	</Card>
-
-	<Card href="/blog/teardrop-helix" image_src={internetofpings}>
-		<svelte:fragment slot="title">Hacklahoma 2024: Internet of Pings</svelte:fragment>
-
-		<p>
-			For Hacklahoma 2024, I worked to create a browser-based network simulator and learning tool
-			with the goal of teaching the OSI model.
-		</p>
-		<AnchorButton href="https://internetofpings.study/" label="Hosted Site" ext />
-		<AnchorButton href="https://devpost.com/software/internet-of-pings" label="DevPost" ext />
-	</Card>
-
-	<AnchorButton href="https://github.com/matthewCmatt" label="View more on my GitHub" ext
-	></AnchorButton>
+	<AnchorButton href="https://github.com/matthewCmatt" label="View more on my GitHub" ext />
 </main>
 
 <style>
@@ -105,6 +79,7 @@
 	#title,
 	#buttons {
 		margin: 0 10vw;
+		margin-bottom: 5rem;
 	}
 
 	#blog-button {

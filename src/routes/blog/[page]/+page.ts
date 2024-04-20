@@ -1,18 +1,14 @@
 import { error } from '@sveltejs/kit';
-import type { PageLoad } from './$types';
-import fm from 'front-matter';
 
-import source from '$lib/posts/teardrop-helix.md?raw';
+export async function load({ params }) {
+	try {
+		const post = await import(`../../../posts/${params.page}.md`);
 
-let content = fm(source);
-console.log(content);
-
-export const load: PageLoad = ({ params }) => {
-	if (params.page === 'teardrop-helix') {
 		return {
-			title: content.attributes,
-			source: content.body
+			content: post.default,
+			meta: post.metadata
 		};
+	} catch (e) {
+		error(404, `Could not find ${params.page}`);
 	}
-	error(404, 'Post not found');
-};
+}
