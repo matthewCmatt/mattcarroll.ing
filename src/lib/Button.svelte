@@ -1,27 +1,23 @@
-<script>
-    import IconExternal from "../assets/IconExternal.svg.svelte";
-
-    export let onClick;
-    export let alt;
+<script lang="ts">
+	export let onClick: Function;
 </script>
 
-<button on:click={onClick} {alt} class="hoverable">
-    <slot />
+<button on:click={() => onClick()} class="hoverable">
+	<slot />
 </button>
 
 <style>
-    button {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        border-radius: var(--border-radius);
-        font-weight: 500;
-        font-family: inherit;
-        background-color: var(--color-button-bg);
-        color: var(--color-a);
-    }
+	button {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		border-radius: var(--border-radius);
+		font-weight: 500;
+		font-family: inherit;
+		background-color: var(--color-button-bg);
+	}
 
-    slot {
-        margin: auto;
-    }
+	slot {
+		margin: auto;
+	}
 </style>
