@@ -14,7 +14,7 @@ composite curves, spiralling around a teardrop-type shape made up of a sphere wi
 top.
 
 <AnchorButton
-    href="https://github.com/matthewCmatt/teardrop-helix"
+    href="https://github.com/matthewCmatt/teardrop-helix/"
     label="Source Code"
     ext
 />

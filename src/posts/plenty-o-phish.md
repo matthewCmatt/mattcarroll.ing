@@ -13,4 +13,4 @@ Winning the 1st place prize for Hacklahoma 2022, our project, Plenty o' Phish, w
 centered around writing phishing emails.
 
 <AnchorButton href="https://plentyophish.tauser.us/" label="Hosted Site" ext />
-<AnchorButton href="https://devpost.com/software/plenty-o-phish" label="DevPost" ext />
+<AnchorButton href="https://devpost.com/software/plenty-o-phish/" label="DevPost" ext />

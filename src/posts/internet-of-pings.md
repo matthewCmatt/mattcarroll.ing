@@ -12,4 +12,4 @@ published: true
 For Hacklahoma 2024, I worked to create a browser-based network simulator and learning tool with the goal of teaching the OSI model.
 
 <AnchorButton href="https://internetofpings.study/" label="Hosted Site" ext />
-<AnchorButton href="https://devpost.com/software/internet-of-pings" label="DevPost" ext />
+<AnchorButton href="https://devpost.com/software/internet-of-pings/" label="DevPost" ext />
