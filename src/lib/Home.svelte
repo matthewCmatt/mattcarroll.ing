@@ -18,7 +18,7 @@
 			<h1>
 				Matt Carroll<InlineTransparent>.ing</InlineTransparent>
 			</h1>
-			<p>Computer Science Undergraduate at the University of Oklahoma</p>
+			<p>Software Engineer</p>
 		</div>
 		<div id="buttons">
 			<AnchorButton href="https://github.com/matthewCmatt" label="GitHub" ext />
