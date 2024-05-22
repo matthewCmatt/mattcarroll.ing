@@ -10,8 +10,6 @@ published: true
     import { AnchorButton } from "$lib";
 </script>
 
-I redesigned the site for my robotics lab at the University of Oklahoma from scratch using Eleventy SSG, Nunjucks templating, and vanilla CSS.
-
-
+I recreated some functionality of Paul Haeberli's 1990 SIGGRAPH 90 paper, Paint By Numbers. This stylistic rendering is done live in the browser using the Canvas2D API.
 
 <AnchorButton href="https://github.com/matthewcmatt/paint-by-numbers/" label="Source Code" ext />
