@@ -12,6 +12,6 @@ published: true
 
 I redesigned the site for my robotics lab at the University of Oklahoma from scratch using Eleventy SSG, Nunjucks templating, and vanilla CSS.
 
-<PaintByNumbers />
+
 
 <AnchorButton href="https://github.com/matthewcmatt/paint-by-numbers/" label="Source Code" ext />
