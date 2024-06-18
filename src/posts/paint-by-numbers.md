@@ -2,6 +2,7 @@
 title: "Paint by Numbers"
 cover: '/paintbynumbers.png'
 cover_alt: 'A painterly image of an OU flag and '
+date: '2024-2-1'
 published: true
 ---
 

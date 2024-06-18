@@ -2,6 +2,7 @@
 title: "AIROU Lab Site"
 cover: '/airou.png'
 cover_alt: 'A tear-drop-shaped helix'
+date: '2023-10-1'
 published: true
 ---
 

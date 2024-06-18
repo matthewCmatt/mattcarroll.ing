@@ -2,6 +2,7 @@
 title: "Hacklahoma '24: Internet of Pings"
 cover: '/internetofpings.png'
 cover_alt: 'A tear-drop-shaped helix'
+date: '2024-3-1'
 published: true
 ---
 
