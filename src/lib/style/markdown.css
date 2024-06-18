@@ -16,3 +16,7 @@
 .md p {
     text-align: justify;
 }
+
+.md:has(a) {
+    align-content: center;
+}

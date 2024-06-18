@@ -1,4 +1,5 @@
 <script lang="ts">
+	import AnchorButton from '$lib/AnchorButton.svelte';
 	import IconArrowLeft from '$lib/assets/icons/IconArrowLeft.svg.svelte';
 	import type { PageData } from './$types';
 
@@ -18,6 +19,11 @@
 	<h1>{data.meta.title}</h1>
 	<img src={data.meta.cover} alt={data.meta.cover_alt} />
 	<svelte:component this={data.content} />
+	<div class="buttons">
+		{#each data.meta.links as button}
+			<AnchorButton href={button.href} label={button.label} ext />
+		{/each}
+	</div>
 </article>
 
 <style>
@@ -29,6 +35,11 @@
 	.md {
 		margin: 5rem 0;
 		max-width: 80ch;
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: center;
 	}
 
 	#home-button {
