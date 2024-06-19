@@ -33,7 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@matthewcmatt/paint-by-numbers": "^1.1.0",
+		"@matthewcmatt/paint-by-numbers": "^1.1.1",
 		"svelte-markdown": "^0.4.1"
 	}
 }
