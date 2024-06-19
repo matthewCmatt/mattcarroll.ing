@@ -17,3 +17,5 @@ I recreated some functionality of Paul Haeberli's 1990 SIGGRAPH 90 paper, Paint 
 Try it out below!
 
 <PaintByNumbers imageURL="/skydance.jpeg"/>
+
+<br>
