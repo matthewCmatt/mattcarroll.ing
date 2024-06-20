@@ -22,11 +22,7 @@
 		</div>
 		<div id="buttons">
 			<AnchorButton href="https://github.com/matthewCmatt" label="GitHub" ext />
-			<AnchorButton
-				href="https://www.linkedin.com/in/matthew-carroll-ab9129182/"
-				label="LinkedIn"
-				ext
-			/>
+			<AnchorButton href="https://www.linkedin.com/in/matthewcmatt/" label="LinkedIn" ext />
 		</div>
 		<button id="blog-button" on:click={scrollToBlog}>
 			<div>Blog</div>
