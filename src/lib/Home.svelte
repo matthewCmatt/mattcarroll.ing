@@ -6,7 +6,10 @@
 	let blog_start: HTMLElement;
 
 	function scrollToBlog() {
-		blog_start.scrollIntoView(true);
+		window.scrollTo({
+			top: blog_start.offsetTop,
+			behavior: 'smooth'
+		});
 	}
 
 	export let data: PageData;
