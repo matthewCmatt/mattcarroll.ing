@@ -5,8 +5,8 @@ cover_alt: 'A tear-drop-shaped helix'
 date: '2023-10-1'
 published: true
 links:
-    # - label: Hosted Site
-    #   href: https://ou.edu/airou/
+    - label: Hosted Site
+      href: https://airou.cs.ou.edu/
     - label: Source Code
       href: https://github.com/airou-lab/website/
 ---
