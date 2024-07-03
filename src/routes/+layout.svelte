@@ -7,6 +7,7 @@
 <svelte:head>
 	<title>Matt Carroll</title>
 </svelte:head>
+
 <main>
 	<slot />
 </main>
