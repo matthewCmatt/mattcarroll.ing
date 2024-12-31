@@ -1,12 +1,12 @@
 ---
-title: "Python: Teardrop Helix"
+title: 'Python: Teardrop Helix'
 cover: /teardrop.png
 cover_alt: A tear-drop-shaped helix
 date: 2022-3-1
 published: true
 links:
-    - label: Source Code
-      href: https://github.com/matthewCmatt/teardrop-helix/
+  - label: Source Code
+    href: https://github.com/matthewCmatt/teardrop-helix/
 ---
 
 In collaboration with Stan Carroll at Beyond Metal, I wrote a small script to generate some

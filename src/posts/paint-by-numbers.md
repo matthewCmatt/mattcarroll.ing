@@ -1,13 +1,14 @@
 ---
-title: "Paint by Numbers"
+title: 'Paint by Numbers'
 cover: '/paintbynumbers.png'
 cover_alt: 'A painterly image of an OU flag'
 date: '2024-2-1'
 published: true
 links:
-    - label: Source Code
-      href: https://github.com/matthewcmatt/paint-by-numbers/
+  - label: Source Code
+    href: https://github.com/matthewcmatt/paint-by-numbers/
 ---
+
 <script>
     import { PaintByNumbers } from "@matthewcmatt/paint-by-numbers";
 </script>

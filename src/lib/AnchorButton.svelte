@@ -6,7 +6,7 @@
 	export let ext = false;
 </script>
 
-<a {href} class={"hoverable" + (ext ? " icon" : "")} >
+<a {href} class={'hoverable' + (ext ? ' icon' : '')}>
 	{label}
 	{#if ext}
 		<IconExternal />

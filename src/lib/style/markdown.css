@@ -1,22 +1,25 @@
-.md h1, h2, h3, p {
- margin: 2rem 0;
+.md h1,
+h2,
+h3,
+p {
+	margin: 2rem 0;
 }
 
 .md h1 {
-    text-align: center;
-    font-size: 1.6rem;
+	text-align: center;
+	font-size: 1.6rem;
 }
 
 .md img {
-    display: block;
-    max-width: 65ch;
-    margin: auto;
+	display: block;
+	max-width: 65ch;
+	margin: auto;
 }
 
 .md p {
-    text-align: justify;
+	text-align: justify;
 }
 
 .md:has(a) {
-    align-content: center;
+	align-content: center;
 }

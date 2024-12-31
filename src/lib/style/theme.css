@@ -1,26 +1,26 @@
 /* The color theme for the site */
 :root {
-    color-scheme: light dark;
-    
-    --border-radius: 8px;
+	color-scheme: light dark;
 
-    --color-white: #FFFFFF;
-    --color-white-soft: #ffffffde;
-    --color-off-white: hsl(0, 0%, 90%);
-    --color-dark-gray: #222222;
-    --color-black: #0f0f0f;
-    --color-dark-purple: #31263E;
-    --color-purple: #44355B;
-    --color-yellow: #ECA72C;
-    --color-flame: #EE5622;
-    --clr-inkwell: #221824;
-    --clr-pink: #AD3F54;
+	--border-radius: 8px;
 
-    --color-background: var(--clr-inkwell);
-    --color-text: var(--color-white-soft);
-    --color-button-bg: var(--clr-pink);
-    --color-button-border: var(--clr-inkwell);
-    --color-a: var(--clr-pink);
-    --color-a-hover: var(--clr-inkwell);
-    --color-card-bg: var(--color-black);
+	--color-white: #ffffff;
+	--color-white-soft: #ffffffde;
+	--color-off-white: hsl(0, 0%, 90%);
+	--color-dark-gray: #222222;
+	--color-black: #0f0f0f;
+	--color-dark-purple: #31263e;
+	--color-purple: #44355b;
+	--color-yellow: #eca72c;
+	--color-flame: #ee5622;
+	--clr-inkwell: #221824;
+	--clr-pink: #ad3f54;
+
+	--color-background: var(--clr-inkwell);
+	--color-text: var(--color-white-soft);
+	--color-button-bg: var(--clr-pink);
+	--color-button-border: var(--clr-inkwell);
+	--color-a: var(--clr-pink);
+	--color-a-hover: var(--clr-inkwell);
+	--color-card-bg: var(--color-black);
 }
