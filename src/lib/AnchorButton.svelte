@@ -6,7 +6,7 @@
 	export let ext = false;
 </script>
 
-<a {href} class="hoverable">
+<a {href} class={"hoverable" + (ext ? " icon" : "")} >
 	{label}
 	{#if ext}
 		<IconExternal />
@@ -17,12 +17,16 @@
 	a {
 		display: inline-block;
 		border-radius: var(--border-radius);
-		padding: 0.6em 1.2em;
+		padding: 0.6em 1em;
 		margin: 0.4em;
 		font-size: 1em;
 		font-weight: 500;
 		font-family: inherit;
 		background-color: var(--color-button-bg);
 		color: inherit;
+	}
+
+	.icon {
+		padding-right: 0.8em;
 	}
 </style>
