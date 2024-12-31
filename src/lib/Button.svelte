@@ -16,8 +16,4 @@
 		font-family: inherit;
 		background-color: var(--color-button-bg);
 	}
-
-	slot {
-		margin: auto;
-	}
 </style>

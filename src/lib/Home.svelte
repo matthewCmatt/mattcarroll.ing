@@ -17,7 +17,7 @@
 
 <Landing {scrollToBlog} />
 
-<div bind:this={blog_start} />
+<div bind:this={blog_start}></div>
 
 <ul>
 	{#each data.posts as post}
