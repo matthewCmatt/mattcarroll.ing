@@ -1,5 +1,10 @@
 <script lang="ts">
 	import IconArrowLeft from '$lib/assets/icons/IconArrowLeft.svg.svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <div class="full">
@@ -12,7 +17,7 @@
 </div>
 
 <article class="md">
-	<slot />
+	{@render children?.()}
 </article>
 
 <style>

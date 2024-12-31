@@ -1,7 +1,12 @@
-<script>
+<script lang="ts">
 	import '$lib/style/theme.css';
 	import '$lib/style/app.css';
 	import '$lib/style/markdown.css';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <svelte:head>
@@ -9,7 +14,7 @@
 </svelte:head>
 
 <main>
-	<slot />
+	{@render children?.()}
 </main>
 
 <style>

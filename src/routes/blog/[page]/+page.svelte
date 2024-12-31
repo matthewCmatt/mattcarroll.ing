@@ -2,12 +2,16 @@
 	import AnchorButton from '$lib/AnchorButton.svelte';
 	import type { PageData } from './$types';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <h1>{data.meta.title}</h1>
 <img src={data.meta.cover} alt={data.meta.cover_alt} class="cover" />
-<svelte:component this={data.content} />
+<data.content />
 <div class="buttons">
 	{#each data.meta.links as button}
 		<AnchorButton href={button.href} label={button.label} ext />

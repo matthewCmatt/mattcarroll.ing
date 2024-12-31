@@ -1,13 +1,18 @@
 <script lang="ts">
-	export let image_src: URL;
-	export let image_alt = '';
-	export let href = '';
+	interface Props {
+		image_src: URL;
+		image_alt?: string;
+		href?: string;
+		title?: import('svelte').Snippet;
+	}
+
+	let { image_src, image_alt = '', href = '', title }: Props = $props();
 </script>
 
 <a {href} class="card hoverable">
 	<img class="cover" src={image_src.toString()} alt={image_alt} />
 	<h2>
-		<slot name="title">No Title was provided</slot>
+		{#if title}{@render title()}{:else}No Title was provided{/if}
 	</h2>
 </a>
 

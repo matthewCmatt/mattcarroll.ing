@@ -3,7 +3,11 @@
 	import IconArrowDown from '$lib/assets/icons/IconArrowDown.svg.svelte';
 	import type { MouseEventHandler } from 'svelte/elements';
 
-	export let scrollToBlog: MouseEventHandler<HTMLButtonElement>;
+	interface Props {
+		scrollToBlog: MouseEventHandler<HTMLButtonElement>;
+	}
+
+	let { scrollToBlog }: Props = $props();
 </script>
 
 <div id="landing">
@@ -17,7 +21,7 @@
 		<AnchorButton href="https://github.com/matthewCmatt" label="GitHub" ext />
 		<AnchorButton href="https://www.linkedin.com/in/matthewcmatt/" label="LinkedIn" ext />
 	</div>
-	<button id="blog-button" on:click={scrollToBlog}>
+	<button id="blog-button" onclick={scrollToBlog}>
 		<div>Blog</div>
 		<div class="icon">
 			<IconArrowDown />

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Home } from '$lib/index';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <Home {data} />

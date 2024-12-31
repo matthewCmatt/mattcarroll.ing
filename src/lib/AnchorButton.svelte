@@ -1,9 +1,13 @@
 <script lang="ts">
 	import IconExternal from '$lib/assets/icons/IconExternal.svg.svelte';
 
-	export let href = '';
-	export let label: string;
-	export let ext = false;
+	interface Props {
+		href?: string;
+		label: string;
+		ext?: boolean;
+	}
+
+	let { href = '', label, ext = false }: Props = $props();
 </script>
 
 <a {href} class={'hoverable' + (ext ? ' icon' : '')}>

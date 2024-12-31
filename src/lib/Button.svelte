@@ -1,9 +1,14 @@
 <script lang="ts">
-	export let onClick: Function;
+	interface Props {
+		onClick: Function;
+		children?: import('svelte').Snippet;
+	}
+
+	let { onClick, children }: Props = $props();
 </script>
 
-<button on:click={() => onClick()} class="hoverable">
-	<slot />
+<button onclick={() => onClick()} class="hoverable">
+	{@render children?.()}
 </button>
 
 <style>

@@ -12,7 +12,11 @@
 		});
 	}
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <Landing {scrollToBlog} />
@@ -22,7 +26,9 @@
 <ul>
 	{#each data.posts as post}
 		<Card href={'blog/' + post.slug} image_src={post.cover}>
-			<svelte:fragment slot="title">{post.title}</svelte:fragment>
+			{#snippet title()}
+				{post.title}
+			{/snippet}
 		</Card>
 	{/each}
 </ul>
