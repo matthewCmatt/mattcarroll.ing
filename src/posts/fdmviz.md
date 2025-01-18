@@ -1,5 +1,5 @@
 ---
-title: '3D Print Visualizer'
+title: 'Simulating 3D Prints'
 cover: '/fdmviz.png'
 cover_alt: 'A green boat with layer lines'
 date: '2024-4-1'

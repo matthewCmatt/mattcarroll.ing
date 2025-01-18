@@ -39,7 +39,6 @@
 		height: 100svh;
 		justify-content: space-between;
 		align-items: center;
-		background: linear-gradient(170deg, rgba(173, 63, 84, 0.5) 0%, rgba(0, 0, 0, 0) 66%);
 	}
 
 	#title,

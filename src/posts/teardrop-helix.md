@@ -1,5 +1,5 @@
 ---
-title: 'Python: Teardrop Helix'
+title: 'Composite Curves'
 cover: /teardrop.png
 cover_alt: A tear-drop-shaped helix
 date: 2022-3-1

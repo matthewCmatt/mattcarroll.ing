@@ -37,13 +37,11 @@ h1 {
 }
 
 .hoverable {
-	border: 2px solid transparent;
 	cursor: pointer;
-	transition: 0.25s;
+	transition: 0.1s;
 }
 
 .hoverable:hover {
-	border-color: var(--color-button-border);
 	color: var(--color-a-hover);
 }
 

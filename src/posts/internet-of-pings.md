@@ -1,5 +1,5 @@
 ---
-title: "Hacklahoma '24: Internet of Pings"
+title: 'Simulating the Internet Protocol'
 cover: '/internetofpings.png'
 cover_alt: 'A tear-drop-shaped helix'
 date: '2024-3-1'

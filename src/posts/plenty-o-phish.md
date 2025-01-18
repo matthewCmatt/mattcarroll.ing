@@ -1,5 +1,5 @@
 ---
-title: "Hacklahoma '22: Plenty o' Phish"
+title: 'Phishing Bill Gates'
 cover: '/plentyophish.png'
 cover_alt: 'A tear-drop-shaped helix'
 date: '2021-2-1'
